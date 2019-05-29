@@ -35,8 +35,8 @@ variable "vpc_id" {
 // type 3 (host unreachable) is still allowed to facilitate path MTU
 // discovery and other host path issues.
 variable "allow_icmp" {
-  type    = string
-  default = "true"
+  type    = bool
+  default = true
 }
 
 // The description field for the Security Group. The default is the built-in Terraform default:
